@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(77, 77, 206);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+
+    <div id="msg">Clique em mim</div>
+    <div name="msg">Selecionando por nome...</div>
+
+    <br>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1];
+        window.document.write( "O texto  por ByTagName é " + p1.innerHTML + "<br>")//Escreve o texto formatado com as tag's HTML.
+
+        var d = window.document.getElementById('msg');
+        window.document.write("O texto por ById é:" + d.innerText + "<br>")
+        //d.style.backgroundColor = 'green'
+        window.document.getElementById('msg').style.backgroundColor = 'green'
+
+        window.document.getElementsByName('msg')[0].style.backgroundColor = 'yellow'
+        window.document.getElementsByName('msg')[0].style.color = 'black'
+
+        var query = window.document.querySelector('div#msg')
+
+        window.document.write("Selecionado por querySelector: " + query.innerText);
+
+
+        window.document.get
+
+
+
+    </script>
+
+    <!-- window.document.write(document.charset)
+    window.document.write(document.URL)
+    window.document.write(p1.innerText) Escreve o texto contido na tag
+    window.document.body.style.backgroundColor = 'black'; Alterar a cor de alguma tag
+    window.alert(p1.innerText); -->
+</body>
+</html>
