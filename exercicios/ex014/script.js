@@ -2,8 +2,6 @@ function carregar() {
 
     var horaAtual = new Date().getHours();
 
-    horaAtual = 22
-
     window.document.getElementById('msg').innerHTML = `Agora são ${horaAtual} horas`;
 
      var img = window.document.getElementById('imagem');
