@@ -2,8 +2,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(70, 142, 236);
-    
+    background-color: rgb(70, 142, 236); 
 }
 
 header {
@@ -14,23 +13,32 @@ header {
 section {
     display: flex;
     flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 200px;
+    max-width: 500px;
     margin: auto;
+    padding: 5px;
     background-color: #ffffff;
     border-radius: 10px;
-    border: 1px solid black;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 
-div#imagem {
-    width: 120px;
-    height: 120px;
-    margin-top: 10px;
+div#formulario > div{
+    padding: 5px;
+}
+
+div#res{
+    width: 250px;
+    padding: 5px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+div#res > img{
+    width: 250px;
+    height: 250px;
+    margin-top: 5px;
     border-radius: 50%;
-    border: 1px solid black;
+    object-fit: cover;
+    object-position: center;
 }
 
 footer{
