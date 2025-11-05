@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <section>
+        <div id="formulario">
+            
+            <div>
+                <label for="txtinicio">Início: </label>
+                <input type="number" name="inicio" id="txtinicio">
+            </div>
+            
+            <div>
+                <label for="txtfim">Fim: </label>
+                <input type="number" name="fim" id="txtfim">
+            </div>
+            
+            <div>
+                <label for="txtpasso">Passo: </label>
+                <input type="number" name="passo" id="txtpasso">
+            </div>
+            
+            <div>
+                <input type="submit" value="Contar" onclick="contar()">
+            </div>
+        </div>
+
+        <div id="res">Preparando a contagem...</div>
+              
+    </section>
+
+    <footer>
+        <p>&copy CursoemVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

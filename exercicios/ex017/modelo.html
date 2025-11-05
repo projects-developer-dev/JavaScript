@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+    <section>
+        <div id="formulario">
+            
+            <div>
+                <label for="txtnumero">Número: </label>
+                <input type="number" name="numero" id="txtnumero">
+            </div>
+            
+            <div>
+                <input type="submit" value="Gerar Tabuada" onclick="montarTabuada()">
+            </div>
+        </div>
+
+        <div id="res">
+            <textarea name="resposta" id="txtres" rows="10" cols="25" placeholder="Digite um número acima"></textarea>
+
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima</option>
+            </select>
+        </div> 
+        
+    </section>
+
+    <footer>
+        <p>&copy CursoemVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
