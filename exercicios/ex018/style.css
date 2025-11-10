@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(70, 142, 236); 
+}
+
+header {
+    text-align: center;
+    color: #ffffff;
+}
+
+section {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+section > div{
+    padding: 5px;
+}
+
+div#formulario{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+}
+
+div#res{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    gap: 5px;
+}
+
+div#resfinal{
+    height: 100%;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.267);
+}
+
+div#res > textarea{
+    overflow: hidden;
+}
+
+footer{
+    text-align: center;
+    color: #ffffff;
+    font-style: italic;
+}
